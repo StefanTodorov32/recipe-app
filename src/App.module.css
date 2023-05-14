@@ -1,0 +1,44 @@
+:root {
+    --bg-color: #FEFAE0;
+    --main-color: #606C38;
+    --secondary-color: #283618;
+    --third-color: #adc178;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--main-color);
+    padding: 20px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.links a {
+    margin-right: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.buttons a {
+    padding: 10px 20px;
+    color: var(--main-color);
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.buttons a:first-child {
+    background-color: var(--third-color);
+    color: white;
+}
