@@ -1,6 +1,6 @@
 import styles from "./Login.module.css";
 import { useForm } from "react-hook-form";
-const Login = () => {
+const Register = () => {
     const {
         register,
         handleSubmit,
@@ -31,11 +31,9 @@ const Login = () => {
                     required: true,
                 })}
             />
-            {errors.email?.type === 'required' && <p role="alert">Email is required</p>}
-            {errors.password?.type === 'required' && <p role="alert">Password name is required</p>}
             <button type="submit">Login</button>
         </form>
     );
 };
 
-export default Login;
+export default Register;
