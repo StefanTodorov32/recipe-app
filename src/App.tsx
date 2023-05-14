@@ -1,6 +1,7 @@
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
 import Login from "./pages/Login/Login";
+import styles from "./App.module.css";
 function App() {
     const router = createBrowserRouter([
         {
@@ -8,7 +9,9 @@ function App() {
             element: (
                 <>
                     <Navbar />
-                    <Outlet />
+                    <section className={styles.section}>
+                        <Outlet />
+                    </section>
                 </>
             ),
             children: [
@@ -41,9 +44,7 @@ function App() {
     ]);
     return (
         <main>
-            <section>
-                <RouterProvider router={router}></RouterProvider>
-            </section>
+            <RouterProvider router={router}></RouterProvider>
         </main>
     );
 }

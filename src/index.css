@@ -6,7 +6,16 @@
   box-sizing: border-box;
 }
 
+:root{
+  --bg-color: #FEFAE0;
+  --main-color: #606C38;
+  --secondary-color: #283618;
+  --third-color: #adc178;
+  --button-color: #283618;
+  --button-hover-color: hsla(83, 36%, 4%, 0.7);
+}
+
 body {
   font-family: 'DM Sans', sans-serif;
-  background-color: #FEFAE0;
+  background-color: var(--bg-color);
 }
